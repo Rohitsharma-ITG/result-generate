@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Find Result</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <main>
+        <h2>See Result</h2>
+        <div>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Outoff</th>
+                    <th>Passing</th>
+                    <th>Distin</th>
+                </tr>
+                <tr>
+                    <td class="hindi_top"><label for="hindi">Hindi</label><input type="number" min="0" max="100" id="hindi"></td>
+                    <td>100</td>
+                    <td>40</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td><label for="english">English</label><input type="number" id="english"></td>
+                    <td>100</td>
+                    <td>35</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td><label for="science">Science</label><input type="number" id="science"></td>
+                    <td>100</td>
+                    <td>45</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td><label for="social_science">S. Science</label><input type="number" id="social_science"></td>
+                    <td>100</td>
+                    <td>30</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td><label for="sanskrit">Sanskrit</label><input type="number" id="sanskrit"></td>
+                    <td>100</td>
+                    <td>33</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td><label for="maths">Maths</label><input type="number" id="maths"></td>
+                    <td>100</td>
+                    <td>37</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <td><a href="#" id="show">Show Result</a></td>
+                    <td>600</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div class="popup">
+        <div class="popupresult">
+            <div class="inner">
+                <div class="inner_div">
+                    <p >Total Marks : </p> <p class="total_value"></p>
+                   </div>
+               <div class="inner_div">
+                <p> Student get : </p> <p class="persentag_value"></p>
+               </div>
+               <div class="inner_div">
+                <p>Student Remark : </p> <p class="remark_value"></p>
+               </div>
+               <div class="inner_div">
+                <p>Student Division : </p> <p class="division_value"></p>
+               </div>
+               <div class="supply">
+                 <p class="supply_hindi"></p>
+                 <p class="supply_english"></p>
+                 <p class="supply_science"></p>
+                 <p class="supply_s_science"></p>
+                 <p class="supply_sanskrit"></p>
+                 <p class="supply_maths"></p>
+               </div>
+            </div>
+            <div class="cross">
+                <i class="fa-solid fa-x"></i>
+            </div>
+        </div>
+    </div>
+    <script src="result.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+*{
+    font-family: sans-serif;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background: #d3f4ff;
+}
+
+table th,td {
+    padding: 15px 38px;
+    border: 1px solid black;
+}
+
+input {
+    margin-left: 25px;
+    width: 65px;
+    outline: none;
+}
+
+table a {
+    padding: 8px;
+    border: none;
+    text-decoration: none;
+    color: #ffffff;
+    background: #ff1800;
+    border-radius: 6px;
+    font-size: 14px;
+}   
+.popup {
+    position: absolute;
+    top: 17%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    scale: 0;
+    transition: all 0.3s ease;
+}
+.popupresult {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    background: #407aff;
+    padding: 75px;
+    font-size: 20px;
+    color: white;
+    border-radius: 25px;
+    position: relative;
+}
+
+.cross {
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
+}
+.inner_div {
+    display: flex;
+    gap: 10px;
+}
+td:nth-child(1) {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0;
+    border-right: 0;    
+    border-left: 0;
+    /* padding: 14px 38px; */
+    margin-top: -1px;
+}
+td.hindi_top {
+    border-top: 0;
+}
+tr:nth-child(even) {
+    /* color: red; */
+    background: #feffc7;
+}
+td:nth-child(3) {
+    color: rgb(255, 0, 0);
+}
+.supply{
+    display: block;
+}
